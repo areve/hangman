@@ -1,0 +1,35 @@
+app-letter {
+  @extend %funky-show-hide;
+
+  padding: 1em;
+  display: block;
+  background-color: #000;
+  text-align: center;
+  overflow: hidden;
+
+  section.letter {
+    border-width: 1px solid red;
+    button {
+      font-weight: bold;
+      font-size: .8em;
+      background-color: #009;
+      color: #fff;
+      display: inline-block;
+      margin: .2em;
+      padding: .3em;
+      width: 2.2em;
+      height: 2.2em;
+      border-radius: 50%;
+      border: .2em solid #fff;
+
+      &:hover {
+        background-color: #66f;
+      }
+
+      &:disabled {
+        cursor: default;
+        background-color: #009;
+      }
+    }
+  }
+}

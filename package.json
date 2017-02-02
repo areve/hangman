@@ -1,0 +1,48 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "description": "A simple Hangman game using modular code in JavaScript using ES6.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/karma/bin/karma start",
+    "dist": "node_modules/.bin/webpack --optimize-minimize ./hangman-entry.js",
+    "start": "node_modules/.bin/webpack-dev-server --inline --hot ./hangman-entry.js",
+    "server": "babel-node server/hangman-server.js --presets es2015",
+    "server-test": "babel-node --presets es2015 server.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://example.com/hangman/.git"
+  },
+  "author": "Andrew Challen",
+  "license": "ISC",
+  "devDependencies": {
+    "angular-mocks": "^1.6.1",
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "css-loader": "^0.26.1",
+    "express": "^4.14.1",
+    "foundation-sites": "^6.3.0",
+    "import-glob-loader": "^1.1.0",
+    "jasmine": "^2.5.3",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.1",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-webpack": "^2.0.2",
+    "node-sass": "^4.4.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.3"
+  },
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-animate": "^1.6.1",
+    "angular-resource": "^1.6.1"
+  }
+}

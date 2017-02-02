@@ -1,0 +1,24 @@
+app-word {
+  @extend %funky-show-hide;
+
+  font-weight: bold;
+  padding: 1em;
+  display: block;
+  text-align: center;
+
+  h1 {
+    font-size: 1em;
+  }
+
+  p {
+    margin: 0 auto;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 1.5em;
+    color:#009;
+    span {
+      display: inline-block;
+      margin: 0.1em;
+    }
+  }
+}

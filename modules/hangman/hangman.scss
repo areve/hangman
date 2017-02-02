@@ -1,0 +1,69 @@
+$foundation-palette: (
+  primary: #55c,
+  secondary: #669,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #ec5840,
+  mars: #D7525C,
+);
+
+@import "node_modules/foundation-sites/scss/foundation.scss";
+@include foundation-everything;
+
+
+@import "_*.scss";
+@import "../**/_*.scss";
+
+body {
+  color:#339;
+  font-size: 200%;
+  overflow: hidden;
+
+  background-color: #fff;
+  background-image:
+  linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+  linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+
+  font-family: 'Gloria Hallelujah', cursive;
+
+}
+
+button {
+  @extend .button;
+}
+
+nav {
+  background-color: #000;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 2.6rem;
+  button {
+    @extend %fade-hide-show;
+    position: fixed;
+    right: 0;
+    margin: 0;
+    height: 2.6rem;
+    width: 10em;
+  }
+}
+
+.play-area {
+  text-align: center;
+  .start-button {
+    @extend %start-animate;
+    margin: 2em;
+    border-radius: 1em;
+    font-size: 1em;
+  }
+}
+
+section.messages {
+  text-align: center;
+  margin-top:1.5em;
+  display:block;
+
+}
+
