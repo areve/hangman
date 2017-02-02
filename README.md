@@ -20,3 +20,5 @@ A simple Hangman game using modular code in JavaScript using ES2015 (ES6).
 The program has been tested with node 4.2.6 on ubuntu and node 6.5.0 on windows.
 
 Whilst everything works in Internet Explorer some of the styles work better in Chrome.
+
+![Hangman screenshot](hangman.png)
